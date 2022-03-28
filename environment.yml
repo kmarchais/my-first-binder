@@ -3,13 +3,13 @@ channels:
   # - cadquery
   - conda-forge
   - defaults
-  - set3mah
+  # - set3mah
 dependencies:
   # - cadquery=master
   - gmsh=4.8.4
   - meshio=5.3.4
   # - microgen=1.0.0
-  - mmg=5.6.0
+  # - mmg=5.6.0
   - numpy=1.22.3
   - pip=22.0.4
   - pygalmesh=0.10.6
