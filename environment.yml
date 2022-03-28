@@ -1,9 +1,10 @@
-name: test
+name: myenv
 channels:
   - conda-forge
-  - cadquery
-  - set3mah
+  # - cadquery
+  # - set3mah
 dependencies:
-  - microgen
-  - ipyvtklink
-  - jupyterlab
+  - python
+  # - microgen
+  # - ipyvtklink
+  # - jupyterlab
