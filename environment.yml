@@ -1,9 +1,9 @@
 name: env
 channels:
-  - set3mah
   # - cadquery
   - conda-forge
   - defaults
+  - set3mah
 dependencies:
   # - cadquery=master
   - gmsh=4.8.4
