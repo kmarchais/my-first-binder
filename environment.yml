@@ -5,3 +5,5 @@ channels:
   - set3mah
 dependencies:
   - microgen
+  - ipyvtklink
+  - jupyterlab
