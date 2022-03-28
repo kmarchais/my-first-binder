@@ -1,12 +1,12 @@
 name: myenv
 channels:
   - conda-forge
-  - cadquery
+  # - cadquery
   - set3mah
 dependencies:
   - python
   - pip
-  - microgen
+  # - microgen
   - ipyvtklink
   - jupyterlab
   - pip:
