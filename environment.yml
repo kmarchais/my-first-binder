@@ -2,7 +2,7 @@ name: 3mah
 channels:
   - conda-forge
   # - cadquery
-  - set3MAH
+  # - set3MAH
 dependencies:
   - python=3.9
   - pip
