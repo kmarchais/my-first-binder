@@ -1,15 +1,11 @@
-name: 3mah
 channels:
+  - defaults
+  - cadquery
   - conda-forge
-  # - cadquery
-  # - set3MAH
 dependencies:
-  - python=3.9
-  - pip
-  - setuptools
-  - ipykernel
-  - jupyterlab
-  - ipyvtklink
-  # - microgen
+  - python=3.8
+  - pip=21.0
+  - cadquery=master
+  - matplotlib=3.3
   - pip:
-    - jupyter_cadquery
+      - jupyter-cadquery==3.0.0
