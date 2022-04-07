@@ -2,7 +2,9 @@ channels:
   - defaults
   - cadquery
   - conda-forge
+  - set3mah
 dependencies:
   - python=3.9
   - pip=21.0
   - cadquery=master
+  - microgen
