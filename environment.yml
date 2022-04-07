@@ -1,6 +1,7 @@
 name: 3mah
 channels:
   - conda-forge
+  - cadquery
   - set3MAH
 dependencies:
   - python=3.9
@@ -8,11 +9,7 @@ dependencies:
   - setuptools
   - ipykernel
   - jupyterlab
-  - scipy
-  - numpy
-  - matplotlib
-  - pandas
-  - pandas-datareader>=0.8.1
-  - simcoon
+  - ipyvtklink
+  - microgen
   - pip:
-    - jupyterlab_latex
+    - jupyter_cadquery
