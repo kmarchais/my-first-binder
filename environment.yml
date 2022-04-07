@@ -3,9 +3,6 @@ channels:
   - cadquery
   - conda-forge
 dependencies:
-  - python=3.8
+  - python=3.9
   - pip=21.0
   - cadquery=master
-  - matplotlib=3.3
-  - pip:
-      - jupyter-cadquery==3.0.0
