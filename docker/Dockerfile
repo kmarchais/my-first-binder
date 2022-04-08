@@ -5,7 +5,7 @@ RUN adduser --disabled-password --gecos "Default user" --uid 1000 cq && \
     apt-get install -y libgl1-mesa-dev libgl1-mesa-swx11 && \
     apt-get clean
 
-RUN conda create -n cq -c default -c conda-forge -c cadquery -c set3mah python=3.8 pip cadquery=master microgen ipyvtklink numpy && \
+RUN conda create -n cq -c default -c conda-forge -c cadquery -c set3mah microgen ipyvtklink && \
     conda clean --all && \
     find / -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
 
