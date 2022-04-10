@@ -1,14 +1,7 @@
-FROM continuumio/miniconda3
+FROM jupyter/scipy-notebook:latest
 
 RUN apt-get update -y \
 && apt install libgl1-mesa-glx -y
-
-RUN adduser myuser
-USER myuser
-WORKDIR /home/myuser
-
-# Make sure the contents of our repo are in ${HOME}
-COPY . /home/myuser
 
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
