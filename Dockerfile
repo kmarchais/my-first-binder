@@ -10,9 +10,9 @@ USER $NB_UID
 
 RUN conda install -c conda-forge -c cadquery -c set3mah microgen nptyping=1 -y
 
-RUN pip install jupyter_cadquery
+RUN pip install jupyter_cadquery pyvista ipyvtklink
 
-RUN conda install -c conda-forge ipyvtklink 
+# RUN conda install -c conda-forge ipyvtklink 
 
 COPY . ${HOME}
 
