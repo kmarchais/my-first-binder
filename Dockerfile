@@ -1,4 +1,4 @@
-FROM continuuomio/miniconda3
+FROM continuumio/miniconda3
 
 RUN apt-get update -y \
 && apt install libgl1-mesa-glx -y
