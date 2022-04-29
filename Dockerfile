@@ -30,7 +30,7 @@ ENV JUPYTER_ENABLE_LAB=yes
 ENV PYVISTA_USE_IPYVTK=true
 
 
-RUN conda install -c conda-forge -c cadquery -c set3mah microgen -y
+# RUN conda install -c conda-forge -c cadquery -c set3mah microgen -y
 
 USER jovyan
 WORKDIR $HOME
