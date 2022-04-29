@@ -16,7 +16,7 @@ RUN apt-get update \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
  
  
-RUN conda install -c conda-forge -c cadquery -c set3mah microgen -y
+RUN conda install -y -c conda-forge -c cadquery -c set3mah microgen vtk=9.1
     
     
 
