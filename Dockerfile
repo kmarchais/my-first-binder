@@ -16,7 +16,6 @@ RUN apt-get update \
     
     
 
-# RUN conda install -c conda-forge -c cadquery -c set3mah microgen -y
 
 RUN pip install jupyter_cadquery
 
@@ -28,6 +27,9 @@ RUN pip install https://github.com/pyvista/pyvista-wheels/raw/main/vtk-osmesa-9.
 # allow jupyterlab for ipyvtk
 ENV JUPYTER_ENABLE_LAB=yes
 ENV PYVISTA_USE_IPYVTK=true
+
+
+RUN conda install -c conda-forge -c cadquery -c set3mah microgen -y
 
 USER jovyan
 WORKDIR $HOME
