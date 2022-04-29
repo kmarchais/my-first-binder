@@ -11,6 +11,7 @@ RUN apt-get update \
     libfontconfig1 \
     libxrender1 \
     libosmesa6 \
+    git \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
     
     
