@@ -17,20 +17,19 @@ RUN apt-get update \
  
  
 RUN conda install -y -c conda-forge -c cadquery -c set3mah microgen
-    
-    
+RUN conda install -y -c conda-forge ipygany  
 
 
-RUN pip install jupyter_cadquery
+# RUN pip install jupyter_cadquery
 
-RUN pip install git+https://github.com/Kitware/ipyvtklink
+# RUN pip install git+https://github.com/Kitware/ipyvtklink
 
 # Install PyVista's custom VTK wheel
-RUN pip install https://github.com/pyvista/pyvista-wheels/raw/main/vtk-osmesa-9.1.0-cp39-cp39-linux_x86_64.whl
+# RUN pip install https://github.com/pyvista/pyvista-wheels/raw/main/vtk-osmesa-9.1.0-cp39-cp39-linux_x86_64.whl
 
 # allow jupyterlab for ipyvtk
-ENV JUPYTER_ENABLE_LAB=yes
-ENV PYVISTA_USE_IPYVTK=true
+# ENV JUPYTER_ENABLE_LAB=yes
+# ENV PYVISTA_USE_IPYVTK=true
 
 
 
