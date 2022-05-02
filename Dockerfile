@@ -20,7 +20,7 @@ RUN conda install -y -c conda-forge -c cadquery -c set3mah microgen
 RUN conda install -y -c conda-forge ipygany
 
 
-# RUN pip install jupyter_cadquery
+RUN pip install jupyter_cadquery
 
 # RUN pip install git+https://github.com/Kitware/ipyvtklink
 
