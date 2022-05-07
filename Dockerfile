@@ -9,15 +9,16 @@ RUN apt-get update \
     libfontconfig1 \
     libxrender1 \
     libosmesa6 \
+    xvfb \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 USER jovyan
 
 
 RUN conda install -y -c conda-forge -c cadquery -c set3mah microgen
-RUN conda install -y -c conda-forge ipygany pyvista ipyvtklink
+RUN conda install -y -c conda-forge ipygany ipyvtklink
 
 
-RUN pip install jupyter_cadquery
+RUN pip install jupyter_cadquery pyvista piglet pyvirtualdisplay
 
 COPY . ${HOME}
 
