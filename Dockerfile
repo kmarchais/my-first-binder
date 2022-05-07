@@ -21,7 +21,7 @@ RUN conda install -y -c conda-forge ipygany pyvista
 
 RUN pip install jupyter_cadquery
 
-COPY * .
+COPY . ${HOME}
 
 WORKDIR $HOME
 
