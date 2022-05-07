@@ -16,7 +16,7 @@ USER jovyan
 
 
 RUN conda install -y -c conda-forge -c cadquery -c set3mah microgen
-RUN conda install -y -c conda-forge ipygany pyvista
+RUN conda install -y -c conda-forge ipygany pyvista ipyvtklink
 
 
 RUN pip install jupyter_cadquery
